@@ -21,6 +21,21 @@ describe("Converter", () => {
         const resultado = convertToRoman(10);
         expect(resultado).toBe("X");
       });
+      
+    it("Debe retornar XVII", () => {
+        const resultado = convertToRoman(17);
+        expect(resultado).toBe("XVII");
+      });
+
+    it("Debe retornar LXIV", () => {
+        const resultado = convertToRoman(64);
+        expect(resultado).toBe("LXIV");
+      });
+    
+    it("Debe retornar XCII", () => {
+        const resultado = convertToRoman(92);
+        expect(resultado).toBe("XCII");
+      });
 });
   
   
