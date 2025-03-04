@@ -36,6 +36,34 @@ describe("Converter", () => {
         const resultado = convertToRoman(92);
         expect(resultado).toBe("XCII");
       });
+    it("Debe retornar CXX", () => {
+        const resultado = convertToRoman(120);
+        expect(resultado).toBe("CXX");
+      });
+
+    it("Debe retornar CXLV", () => {
+        const resultado = convertToRoman(145);
+        expect(resultado).toBe("CXLV");
+      });
+    
+    it("Debe retornar CCCXCIX", () => {
+        const resultado = convertToRoman(399);
+        expect(resultado).toBe("CCCXCIX");
+      });
+    it("Debe retornar CDXCVIII", () => {
+        const resultado = convertToRoman(498);
+        expect(resultado).toBe("CDXCVIII");
+      });
+
+    it("Debe retornar D", () => {
+        const resultado = convertToRoman(500);
+        expect(resultado).toBe("D");
+      });
+    
+    it("Debe retornar CCXCI", () => {
+        const resultado = convertToRoman(291);
+        expect(resultado).toBe("CCXCI");
+      });
 });
   
   

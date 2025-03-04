@@ -1,5 +1,7 @@
 function convertToRoman(num) {
   const romanNumerals = [
+    { value: 500, numeral: 'D' },
+    { value: 400, numeral: 'CD' },
     { value: 100, numeral: 'C' },
     { value: 90, numeral: 'XC' },
     { value: 50, numeral: 'L' },
